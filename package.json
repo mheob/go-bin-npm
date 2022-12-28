@@ -1,0 +1,31 @@
+{
+  "name": "go-bin-npm",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "go",
+    "golang",
+    "bin",
+    "binary"
+  ],
+  "homepage": "https://github.com/mheob/go-bin-npm",
+  "bugs": "https://github.com/mheob/go-bin-npm/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mheob/go-bin-npm"
+  },
+  "license": "MIT",
+  "author": "Alexander Böhm <tools@boehm.work>",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
